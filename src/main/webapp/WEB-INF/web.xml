@@ -22,10 +22,20 @@
       <url-pattern>/implicitobjects/nineimplicitobjects.jsp</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>sessionimplicit</servlet-name>
+    <jsp-file>/implicitobjects/testsessionobject.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>sessionimplicit</servlet-name>
+      <url-pattern>/testsession</url-pattern>
+  </servlet-mapping>
+
+
   <context-param>
     <param-name>dname</param-name>
     <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
   </context-param>
-
 
 </web-app>

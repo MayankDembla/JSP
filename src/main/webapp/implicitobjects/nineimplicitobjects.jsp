@@ -51,7 +51,14 @@
               out.println("driver name is " + driver) ;
           }
        %>
-
+       <br><br>
+      6.
+      	○ In JSP, session is an implicit object of type HttpSession.
+      	○ The Java developer can use this object to set, get or remove the attribute or to get the session information.<br><br>
+        <%
+            String newname = (String) session.getAttribute("user") ;
+            out.println("Hello . " + newname ) ;
+        %>
 
     </body>
 </html>
