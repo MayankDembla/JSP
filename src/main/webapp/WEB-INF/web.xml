@@ -123,6 +123,16 @@
     <url-pattern>/usebeans</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>actiontagk</servlet-name>
+    <jsp-file>/actiontags/employeeform.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>actiontagk</servlet-name>
+    <url-pattern>/setbeans</url-pattern>
+  </servlet-mapping>
+
 
   <context-param>
     <param-name>dname</param-name>
