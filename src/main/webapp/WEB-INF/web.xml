@@ -91,6 +91,19 @@
     <location>/exceptionhandling/error.jsp</location>
   </error-page>
 
+  <!-- action tags -->
+
+  <servlet>
+    <servlet-name>actiontag</servlet-name>
+    <jsp-file>/actiontags/forwardtag.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>actiontag</servlet-name>
+    <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+
+
   <context-param>
     <param-name>dname</param-name>
     <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
