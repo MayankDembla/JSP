@@ -113,6 +113,16 @@
     <url-pattern>/include</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>actiontagj</servlet-name>
+    <jsp-file>/actiontags/usebeans.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>actiontagj</servlet-name>
+    <url-pattern>/usebeans</url-pattern>
+  </servlet-mapping>
+
 
   <context-param>
     <param-name>dname</param-name>

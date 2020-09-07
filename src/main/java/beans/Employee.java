@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class Employee implements Serializable {
 
 
-    Employee(){
+   public Employee(){
         // no arg constructor
     }
 
@@ -46,5 +46,9 @@ public class Employee implements Serializable {
 
     public void setStandard(int standard) {
         this.standard = standard;
+    }
+
+    public int cube(int x){
+        return x*x*x ;
     }
 }
