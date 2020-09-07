@@ -108,7 +108,7 @@
                 int xnew = 1;
 
                 if (xnew == 1) {
-                   throw new RuntimeException("Error condition!!!");
+                  // throw new RuntimeException("Error condition!!!");
                 }
              %>
 

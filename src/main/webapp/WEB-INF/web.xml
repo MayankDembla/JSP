@@ -22,6 +22,7 @@
       <url-pattern>/implicitobjects/nineimplicitobjects.jsp</url-pattern>
   </servlet-mapping>
 
+  <!-- Test Session Jsp -->
   <servlet>
     <servlet-name>sessionimplicit</servlet-name>
     <jsp-file>/implicitobjects/testsessionobject.jsp</jsp-file>
@@ -32,6 +33,17 @@
       <url-pattern>/testsession</url-pattern>
   </servlet-mapping>
 
+  <!-- Directives -->
+
+  <servlet>
+     <servlet-name>directive</servlet-name>
+     <jsp-file>/directives/pagedirective.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>directive</servlet-name>
+    <url-pattern>/directive</url-pattern>
+  </servlet-mapping>
 
   <context-param>
     <param-name>dname</param-name>
