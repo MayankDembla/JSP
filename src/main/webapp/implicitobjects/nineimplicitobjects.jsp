@@ -1,3 +1,5 @@
+<%@ page errorPage = "showerror.jsp" %>
+
 <html>
     <head><title></title></head>
     <body>
@@ -95,6 +97,20 @@
              out.println("Value is + " + x);
           %>
 
+         <br><br>
+     9.  Exception Implicit Object
+
+     	○ In JSP, exception is an implicit object of type java.lang.Throwable class.
+        ○ This object can be used to print the exception, but it can only be used in error pages.
+
+       <%
+                // Throw an exception to invoke the error page
+                int xnew = 1;
+
+                if (xnew == 1) {
+                   throw new RuntimeException("Error condition!!!");
+                }
+             %>
 
     </body>
 </html>
