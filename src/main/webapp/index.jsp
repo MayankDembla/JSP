@@ -17,5 +17,8 @@
          </form>
          <br/>
 
+         <h3> Declaration Tag </h3>
+         <a href="./jsptags/declarationtags.jsp">Declaration Tags </a>
+
 </body>
 </html>
