@@ -65,6 +65,18 @@
     <url-pattern>/taglibdirective</url-pattern>
   </servlet-mapping>
 
+  <!-- Exception Handling -->
+
+  <servlet>
+    <servlet-name>exception</servlet-name>
+    <jsp-file>/exceptionhandling/dividebyzero.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>exception</servlet-name>
+    <url-pattern>/exception</url-pattern>
+  </servlet-mapping>
+
   <context-param>
     <param-name>dname</param-name>
     <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
