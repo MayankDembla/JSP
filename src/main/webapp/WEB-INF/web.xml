@@ -77,6 +77,20 @@
     <url-pattern>/exception</url-pattern>
   </servlet-mapping>
 
+  <!-- Genric one for all the errors with error code 500-->
+
+  <!-- Way 1  using error code -->
+  <error-page>
+    <error-code>500</error-code>
+    <location>/exceptionhandling/error.jsp</location>
+  </error-page>
+
+  <!-- way 2 - using the specific error -->
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/exceptionhandling/error.jsp</location>
+  </error-page>
+
   <context-param>
     <param-name>dname</param-name>
     <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
