@@ -6,7 +6,9 @@
         String name = request.getParameter("uname") ;
         out.println("Welcome: " + name ) ;
 
-        session.setAttribute("user",name) ;
+     //   session.setAttribute("user",name) ;
+
+        pageContext.setAttribute("user",name,pageContext.SESSION_SCOPE) ;
 
     %>
 

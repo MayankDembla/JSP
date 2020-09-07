@@ -59,6 +59,21 @@
             String newname = (String) session.getAttribute("user") ;
             out.println("Hello . " + newname ) ;
         %>
+       <br><br>
+
+       7. 	○ In JSP, pageContext is an implicit object of type PageContext class.
+          	○ The PageContext object is used to set, get or remove attribute from one of the following scopes:
+
+          		○ Page
+          		○ Request
+          		○ Session
+                   Application
+              <br><br>
+
+           <%
+             String newnewname =(String) pageContext.getAttribute("user",PageContext.SESSION_SCOPE) ;
+             out.println("Name using Page Context is : " + newnewname ) ;
+           %>
 
     </body>
 </html>
