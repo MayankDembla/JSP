@@ -74,6 +74,27 @@
              String newnewname =(String) pageContext.getAttribute("user",PageContext.SESSION_SCOPE) ;
              out.println("Name using Page Context is : " + newnewname ) ;
            %>
+           <br><br>
+        8. Page Implicit Object
+        	○ In JSP, page is an implicit object of type Object class.
+            ○ This object is assigned to the reference of auto generated servlet class.
+
+           <br><br>
+          <%!
+
+            int getvaluenew(int x){
+               x = x +2  ;
+               return x ;
+            }
+
+           %>
+
+          <%
+             int x = this.getvaluenew(5) ;
+             this.log("message");
+             out.println("Value is + " + x);
+          %>
+
 
     </body>
 </html>
