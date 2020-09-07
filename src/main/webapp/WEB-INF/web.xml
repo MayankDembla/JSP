@@ -42,7 +42,17 @@
 
   <servlet-mapping>
     <servlet-name>directive</servlet-name>
-    <url-pattern>/directive</url-pattern>
+    <url-pattern>/pagedirective</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>directive</servlet-name>
+    <jsp-file>/directives/includedirective.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>directive</servlet-name>
+    <url-pattern>/includedirective</url-pattern>
   </servlet-mapping>
 
   <context-param>
