@@ -5,4 +5,27 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <servlet>
+    <servlet-name>imlicitobject</servlet-name>
+    <jsp-file>/implicitobjects/nineimplicitobjects.jsp</jsp-file>
+
+    <!-- Servlet Config -->
+    <init-param>
+      <param-name>dname</param-name>
+      <param-value>sun.odbc.jdbc.JdbcOdbcDriver</param-value>
+    </init-param>
+
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>imlicitobject</servlet-name>
+      <url-pattern>/implicitobjects/nineimplicitobjects.jsp</url-pattern>
+  </servlet-mapping>
+
+  <context-param>
+    <param-name>dname</param-name>
+    <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
+  </context-param>
+
+
 </web-app>
