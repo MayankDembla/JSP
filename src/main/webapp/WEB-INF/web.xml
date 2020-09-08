@@ -134,6 +134,18 @@
   </servlet-mapping>
 
 
+  <!-- Expression Language -->
+
+  <servlet>
+    <servlet-name>exprlang</servlet-name>
+    <jsp-file>/expressionlang/form.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>exprlang</servlet-name>
+    <url-pattern>/exprlang</url-pattern>
+  </servlet-mapping>
+
   <context-param>
     <param-name>dname</param-name>
     <param-value>sun.jdbc.NewJdbcOdbcDriver</param-value>
