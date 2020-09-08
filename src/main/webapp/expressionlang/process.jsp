@@ -4,5 +4,12 @@
 <html>
 <body>
       Welcome, ${param.name}
+
+      <p> <b> Use Session Scope </b> <br>
+
+       Name :  ${sessionScope.user}
+
+      </p>
+
 </body>
 </html>
